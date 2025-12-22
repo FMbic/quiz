@@ -2,15 +2,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class mapper extends questions{
+public class mapper {
 
-    questions questions;
+    String [] questions  = {"Компьютерные сети это сети: ","В режиме коммутации каналов сохранение очередности передаваемой информации: "};
 
-    public void storeQuest (questions questions)
-    {
-        this.questions = questions;
+    String [][] options =
+            {
+                    {"с коммутацией пакетов", "с коммутацией каналов"},
+                    {"обеспечивается", "не обеспечивается", "3 опция для теста"}
+            };
 
-        questionWithCorrectAnswer.put("Компьютерные сети это сети: ", "С коммутацией пакетов");
-
-    }
 }

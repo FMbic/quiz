@@ -12,6 +12,11 @@ public static void main (String[] args)
     Scanner answer = new Scanner(System.in);
     int correctAnswer = 0;
 
-    mapper mm = new mapper();
+    mapper obj = new mapper();
+
+    for(int i = 0; i < obj.questions.length; i++)
+    {
+        System.out.println(i +" "+ obj.questions[i]);
+    }
 
 }
