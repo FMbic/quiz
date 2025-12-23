@@ -12,16 +12,17 @@ public static void main (String[] args)
     Scanner answer = new Scanner(System.in);
     int correctAnswer = 0;
 
-    mapper obj = new mapper();
+    mapper questions = new mapper();
 
 
-    for(int i = 0; i < obj.questions.length; i++)
-    {
-        System.out.println(obj.questions[i]);
-        //for (int j = 0; j < obj.setOptions(); j++) {
-        //}
-        System.out.println();
-    }
+    while (questions.questions.length != 1)
+        for(int i = 0; i < questions.questions.length; i++)
+        {
+            System.out.println(questions.questions[i]);
+            //for (int j = 0; j < obj.setOptions(); j++) {
+            //}
+            questions.setOptions();
+        }
 
 
 }
