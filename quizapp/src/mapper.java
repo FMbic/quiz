@@ -12,4 +12,14 @@ public class mapper {
                     {"обеспечивается", "не обеспечивается", "3 опция для теста"}
             };
 
+    public void setOptions ()
+    {
+        ArrayList <String> options = new ArrayList<>();
+        options.add("с коммутацией пакетов");
+        options.add("с коммутацией каналов");
+
+        IO.println(options);
+
+    }
+
 }
