@@ -17,9 +17,12 @@ public static void main (String[] args)
 
     for(int i = 0; i < questions.questions.length; i++)
     {
-        System.out.println(questions.questions[i]);
+        System.out.println(questions.questions[i+1]);
         questions.firstOptions();
+        answer.nextLine();
 
+        questions.secondOptions();
+        answer.nextLine();
     }
 
 
