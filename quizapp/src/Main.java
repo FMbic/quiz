@@ -15,13 +15,12 @@ public static void main (String[] args)
     mapper questions = new mapper();
 
 
-    //while (questions.questions.length != 1)
-        for(int i = 0; i < questions.questions.length; i++)
-        {
-            System.out.println(questions.questions[i]);
+    for(int i = 0; i < questions.questions.length; i++)
+    {
+        System.out.println(questions.questions[i]);
+        questions.firstOptions();
 
-            questions.firstOptions();
-        }
+    }
 
 
 
