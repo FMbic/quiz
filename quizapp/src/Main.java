@@ -15,14 +15,14 @@ public static void main (String[] args)
     mapper questions = new mapper();
 
 
-    while (questions.questions.length != 1)
+    //while (questions.questions.length != 1)
         for(int i = 0; i < questions.questions.length; i++)
         {
             System.out.println(questions.questions[i]);
-            //for (int j = 0; j < obj.setOptions(); j++) {
-            //}
-            questions.setOptions();
+
+            questions.firstOptions();
         }
+
 
 
 }
