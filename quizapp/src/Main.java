@@ -1,31 +1,13 @@
 import java.util.Scanner;
 
-/*
-1. add questions
-2. add answers
-3. add correct answers
-4. link correct ones to the questions
- */
-
 public static void main (String[] args)
 {
     Scanner answer = new Scanner(System.in);
     int correctAnswer = 0;
     int guess;
-    //mapper map = new mapper();
+    questions q1 = new questions("Компьютерные сети это сети: ",
+            Arrays.asList("1. C коммутацией пакетов","2. C коммутацией каналов"),0);
 
-/*
-    for(int i = 0; i < questions.questions.length; i++)
-    {
-        System.out.println(questions.questions[i]);
-        questions.firstOptions();
-        answer.nextLine();
-
-        questions.secondOptions();
-        answer.nextLine();
-    }
-
- */
-
-
+    System.out.println(q1.getQuestion()+"\n"+ q1.getOptions());
+    answer.nextLine();
 }
