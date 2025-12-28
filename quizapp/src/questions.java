@@ -7,6 +7,7 @@ public class questions
     private List<String> options;
     private int correctAnswer;
 
+
     public questions(String question, List<String> options, int correctAnswer)
     {
         this.question = question;
@@ -22,6 +23,7 @@ public class questions
     public void setQuestion(String question) {this.question = question;}
     public void setOptions(List<String> options) {this.options = options;}
     public void setCorrectAnswer(int correctAnswer) {this.correctAnswer = correctAnswer;}
+
 
 
 }
