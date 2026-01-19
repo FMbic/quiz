@@ -24,7 +24,6 @@ public static void main (String[] args)
     mapper mp = new mapper();
 
 
-
         for (int i = 0; i < iterationOfQuestions;i++) {
             int correctAnswerCounter = 0;
 
@@ -435,11 +434,20 @@ public static void main (String[] args)
             System.out.println("Правильных ответов : " + correctAnswerCounter );
 
             System.out.println(mp.q50.getQuestion() + "\n" + mp.q50.getOptions());
-            int guess51 = answer.nextInt();
-            guess51--;
-            if (guess51 == mp.q51.getCorrectAnswer()){correctAnswerCounter++;
+            int guess50 = answer.nextInt();
+            guess50--;
+            if (guess50 == mp.q50.getCorrectAnswer()){correctAnswerCounter++;
             correctAnswer = correctAnswerCounter;
                 }
+            System.out.println("Правильный ответ: "+mp.q50.getCorrectAnswer());
+            System.out.println("Правильных ответов : " + correctAnswerCounter );
+
+            System.out.println(mp.q51.getQuestion() + "\n" + mp.q51.getOptions());
+            int guess51 = answer.nextInt();
+            guess51--;
+            if (guess51 == mp.q50.getCorrectAnswer()){correctAnswerCounter++;
+                correctAnswer = correctAnswerCounter;
+            }
             System.out.println("Правильный ответ: "+mp.q51.getCorrectAnswer());
             System.out.println("Правильных ответов : " + correctAnswerCounter );
 
