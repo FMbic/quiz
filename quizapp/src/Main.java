@@ -353,11 +353,20 @@ public static void main (String[] args)
             System.out.println("Правильных ответов : " + correctAnswerCounter );
 
             System.out.println(mp.q40.getQuestion() + "\n" + mp.q40.getOptions());
+            int guess40 = answer.nextInt();
+            guess40--;
+            if (guess40 == mp.q40.getCorrectAnswer()){correctAnswerCounter++;
+            correctAnswer = correctAnswerCounter;
+                }
+            System.out.println("Правильный ответ: "+mp.q40.getCorrectAnswer());
+            System.out.println("Правильных ответов : " + correctAnswerCounter );
+
+            System.out.println(mp.q41.getQuestion() + "\n" + mp.q41.getOptions());
             int guess41 = answer.nextInt();
             guess41--;
             if (guess41 == mp.q41.getCorrectAnswer()){correctAnswerCounter++;
-            correctAnswer = correctAnswerCounter;
-                }
+                correctAnswer = correctAnswerCounter;
+            }
             System.out.println("Правильный ответ: "+mp.q40.getCorrectAnswer());
             System.out.println("Правильных ответов : " + correctAnswerCounter );
 
